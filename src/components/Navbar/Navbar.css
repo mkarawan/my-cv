@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
+}
+.navbar.mobile {
+  top: 0;
+  left: 0;
+}
+.navbar.mobile .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .navbar-btn {
+  margin: 16px 0;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.navbar .nav-links li {
+  text-decoration: none;
+}
+.navbar .nav-links li:hover {
+  color: #555;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.mobile-menu li {
+  text-align: left;
+  margin: 20px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mobile-menu li:hover {
+  color: #555;
+}
+
+/*# sourceMappingURL=Navbar.css.map */
