@@ -1,0 +1,43 @@
+.show-more {
+  vertical-align: middle;
+  display: flex;
+  padding-left: 30px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    height: fit-content;
+  }
+  h2{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+}
+.exp-timeline {
+  position: relative;
+}
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  left: 16px;
+}
+.exp-item {
+  position: relative;
+}
+.exp-dot {
+  height: 16px;
+  width: 16px;
+  background-color: red;
+  position: absolute;
+  left: 9px;
+  border-radius: 50%;
+  top: 10px;
+}

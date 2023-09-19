@@ -1,0 +1,41 @@
+.name{
+    margin: 0 auto;
+    width: 215px;
+    margin-top: 2rem;
+    .my-name{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    h1{
+        margin: 0;
+        font-weight: 700;
+    }
+}
+.header{
+    p{
+        font-size: 1.5rem;
+        width: 215px;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 1.2rem;
+    }
+    ul{
+        text-align: center;
+        list-style: none;
+        width: 137px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding: 0;
+        margin-bottom: 4rem;
+        li{
+            display: flex;
+            padding: 0.7rem;
+            p{
+                font-size: 1.2rem;
+                margin: 0;
+                margin-left: 10px;
+        }
+    }
+    }
+}
