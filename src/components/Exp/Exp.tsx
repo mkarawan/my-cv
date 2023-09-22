@@ -4,8 +4,8 @@ import "./Exp.css";
 
 const Experience: React.FC = () => {
   return (
-    <section className="experience">
-      <h1>Experience</h1>
+    <section className="experience" id="experience">
+      <h1 className="section-name">Experience</h1>
       <section className="exp-timeline">
       <ExpItem
         jobName="Front-end Developer Intership"

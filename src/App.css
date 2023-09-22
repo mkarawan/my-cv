@@ -12,3 +12,14 @@ h1{
 p, li {
   font-family: "Quicksand", sans-serif;
 }
+h1.section-name{
+  color:#201b7c;
+  margin-top: 3rem;
+}
+html, body{
+  font-size: 20px;
+
+}
+section{
+  padding: 0 10px;
+}

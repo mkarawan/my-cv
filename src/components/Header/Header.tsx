@@ -8,7 +8,7 @@ import { SiMinutemailer } from "react-icons/si";
 
 const Header: React.FC = () => {
   return (
-    <>
+    <div className="background">
       <section className="header">
         <div className="name">
           <h1 className="my-name">Monika </h1>
@@ -17,23 +17,29 @@ const Header: React.FC = () => {
         <p>Computer Science Student</p>
         <ul>
           <li>
-            <IconContext.Provider value={{ color: "black", size: "22px" }}>
-              <div>
-                <SiGithub />
-              </div>
-            </IconContext.Provider>
-            <p>Github</p>
+            <a href="https://github.com/mkarawan">
+              <IconContext.Provider value={{ color: "white", size: "30px" }}>
+                <div>
+                  <SiGithub />
+                </div>
+              </IconContext.Provider>
+              <p>Github</p>
+            </a>
           </li>
           <li>
-            <IconContext.Provider value={{ color: "black", size: "22px" }}>
+          <a href="https://github.com/mkarawan">
+
+            <IconContext.Provider value={{ color: "white", size: "30px" }}>
               <div>
                 <SiLinkedin />
               </div>
             </IconContext.Provider>
             <p>LinkedIn</p>
+            </a>
           </li>
           <li>
-            <IconContext.Provider value={{ color: "black", size: "22px" }}>
+
+            <IconContext.Provider value={{ color: "white", size: "30px" }}>
               <div>
                 <FaFileDownload />
               </div>
@@ -41,7 +47,8 @@ const Header: React.FC = () => {
             <p>Resume</p>
           </li>
           <li>
-            <IconContext.Provider value={{ color: "black", size: "22px" }}>
+
+            <IconContext.Provider value={{ color: "white", size: "30px" }}>
               <div>
                 <SiMinutemailer />
               </div>
@@ -50,7 +57,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </section>
-    </>
+    </div>
   );
 };
 

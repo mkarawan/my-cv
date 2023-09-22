@@ -3,8 +3,8 @@
   display: flex;
   padding-left: 30px;
   justify-content: space-between;
-  box-sizing: border-box;
   width: 100%;
+  padding-top: 5px;
   button {
     background: none;
     outline: none;
@@ -12,10 +12,9 @@
     height: fit-content;
   }
   h2{
-    margin: 0 auto;
+    margin: 0;
     font-weight: 500;
     font-size: 1rem;
-    vertical-align: middle;
   }
 }
 .exp-timeline {
@@ -31,13 +30,23 @@
 }
 .exp-item {
   position: relative;
+  .exp-description{
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+  h3{
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
 }
 .exp-dot {
-  height: 16px;
-  width: 16px;
-  background-color: red;
+  height: 20px;
+  width: 20px;
+  background-color: #E8B0E9;
   position: absolute;
-  left: 9px;
+  left: -3px;
   border-radius: 50%;
   top: 10px;
 }

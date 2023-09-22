@@ -9,6 +9,8 @@ import "./Navbar.css";
 const Navbar: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [menuIconColor, setMenuIconColor] = useState("white");
+
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -20,16 +22,36 @@ const Navbar: React.FC = () => {
       window.removeEventListener("resize", checkScreenWidth);
     };
   }, []);
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+  
+    const scrollPosition = window.scrollY;
+  
+    if (scrollPosition >= 760) {
+      navbar?.removeAttribute('style')
+      navbar?.classList.add('scrolled');
+      setMenuIconColor("black");
+
+    } else {
+      navbar?.classList.remove('scrolled');
+      setMenuIconColor("white");
+    }
+  });
 
   return (
     <>
-      <nav className={"navbar"}>
-        <div className="logo">MK</div>
+    
+      <nav className={"navbar"} style={showMenu ? {backgroundColor:"white"}: {backgroundColor:"transparent"}}>
+    
+          <div className="logo" style={showMenu ? { color: "black" } : {}}>
+            MK
+          </div>
+       
         {isMobile ? (
           <>
             {!showMenu && (
               <button className="navbar-btn" onClick={() => setShowMenu(true)}>
-                <IconContext.Provider value={{ color: "black", size: "22px" }}>
+                <IconContext.Provider value={{ color: menuIconColor, size: "24px" }}>
                   <div>
                     <HiOutlineMenuAlt3 />
                   </div>
@@ -38,7 +60,7 @@ const Navbar: React.FC = () => {
             )}
             {showMenu && (
               <button className="navbar-btn" onClick={() => setShowMenu(false)}>
-                <IconContext.Provider value={{ color: "black", size: "22px" }}>
+                <IconContext.Provider value={{ color: "black", size: "24px" }}>
                   <div>
                     <HiXMark />
                   </div>
@@ -49,10 +71,18 @@ const Navbar: React.FC = () => {
         ) : (
           <>
             <ul className="nav-links">
-              <li>Experience</li>
-              <li>Education</li>
-              <li>Skills</li>
-              <li>Projects</li>
+              <li onClick={() => setShowMenu(false)}>
+                <a href="#experience">Experience</a>
+              </li>
+              <li onClick={() => setShowMenu(false)}>
+                <a href="#education">Education</a>
+              </li>
+              <li onClick={() => setShowMenu(false)}>
+                <a href="#skills">Skills</a>
+              </li>
+              <li onClick={() => setShowMenu(false)}>
+                <a href="#projects">Projects</a>
+              </li>
             </ul>
           </>
         )}
@@ -60,10 +90,18 @@ const Navbar: React.FC = () => {
       {showMenu && (
         <>
           <ul className="mobile-menu">
-            <li>Experience</li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Projects</li>
+            <li onClick={() => setShowMenu(false)}>
+              <a href="#experience">Experience</a>
+            </li>
+            <li onClick={() => setShowMenu(false)}>
+              <a href="#education">Education</a>
+            </li>
+            <li onClick={() => setShowMenu(false)}>
+              <a href="#skills">Skills</a>
+            </li>
+            <li onClick={() => setShowMenu(false)}>
+              <a href="#projects">Projects</a>
+            </li>
           </ul>
         </>
       )}

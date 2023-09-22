@@ -19,8 +19,9 @@ const ExpItem: React.FC<ExpItemProps> = ({ date, jobName, description }) => {
   return (
     <>
       <section className="exp-item">
-        <div className="exp-dot"></div>
         <div className="show-more" onClick={handleShowMore}>
+        <div className="exp-dot"></div>
+
           <h2>{date}</h2>
           {!showMore ? (<button type="button"><IconContext.Provider value={{ color: "black", size: "26px" }}>
               <div>
@@ -35,7 +36,7 @@ const ExpItem: React.FC<ExpItemProps> = ({ date, jobName, description }) => {
             )}
         </div>
         <h3>{jobName}</h3>
-        {showMore && <p>{description}</p>}
+        {showMore && <p className="exp-description">{description}</p>}
       </section>
     </>
   );

@@ -8,12 +8,14 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
+import Greeting from './components/Greeting/Greeting';
 
 function App() {
   return (
     <div className="App">
         <Navbar/>
         <Header/>
+        <Greeting/>
         <Experience/>
         <Skills/>
         <Education/>

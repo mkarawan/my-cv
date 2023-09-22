@@ -1,10 +1,9 @@
 .name {
   margin: 0 auto;
-  width: 215px;
-  margin-top: 2rem;
+  width: 300px;
 }
 .name .my-name {
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 700;
   text-align: left;
 }
@@ -13,9 +12,26 @@
   font-weight: 700;
 }
 
+.background {
+  background-image: url("./1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -180px;
+  box-sizing: border-box;
+  margin-bottom: -180px;
+  padding: 0;
+}
+
+.header {
+  color: white;
+  backdrop-filter: blur(2px) brightness(70%);
+  padding-top: 250px;
+  padding-bottom: 20px;
+}
 .header p {
   font-size: 1.5rem;
-  width: 215px;
+  width: 300px;
   text-align: left;
   margin: 0 auto;
   margin-top: 1.2rem;
@@ -23,7 +39,7 @@
 .header ul {
   text-align: center;
   list-style: none;
-  width: 137px;
+  width: 300px;
   margin: 0 auto;
   margin-top: 1.5rem;
   padding: 0;
@@ -33,10 +49,18 @@
   display: flex;
   padding: 0.7rem;
 }
+.header ul li a {
+  font-size: 1.1rem;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  width: auto;
+}
 .header ul li p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 20px;
+  width: auto;
 }
 
 /*# sourceMappingURL=Header.css.map */

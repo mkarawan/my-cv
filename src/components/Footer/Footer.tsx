@@ -1,9 +1,12 @@
 import React from "react";
+import "./Footer.css";
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>Contact me!</p>
-      <p>© 2023 Created by Monika Karawan</p>
+      <div>
+        <p>Contact me!</p>
+        <p>© 2023 Created by Monika Karawan</p>
+      </div>
     </footer>
   );
 };

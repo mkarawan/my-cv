@@ -1,0 +1,19 @@
+footer{
+    color: white;
+    background-image: url("./footer.png");
+    background-size: cover; 
+    background-position-x: center;
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size: initial;
+        margin: 0.3rem;
+        font-weight: 500;
+    }
+    div{
+        padding: 0.7rem;
+
+        backdrop-filter: blur(4px) brightness(70%);
+
+    }
+
+}

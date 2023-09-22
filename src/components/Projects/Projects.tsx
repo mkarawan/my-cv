@@ -4,8 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 const Projects: React.FC = () => {
   return (
-    <section className="projects">
-      <h1>Projects </h1>
+    <section className="projects" id="projects">
+      <h1 className="section-name">Projects </h1>
       <Carousel showArrows={true} infiniteLoop={true} swipeable={true} emulateTouch={true}>
         <div>
           <img src="website.png" />

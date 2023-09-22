@@ -1,0 +1,38 @@
+.skills-background{
+    background-image: url("./skills.png");
+    background-size: auto 1200px; 
+    background-position-x: center;
+
+    .skills{
+        backdrop-filter: blur(6px) brightness(70%);
+        color: white;
+        padding: 2rem 0;
+
+        h1{
+            color: white;
+            margin: 0;
+            z-index: 10;
+            padding-bottom: 1rem;
+        }
+        > div{
+            margin-top: 30px;
+        }
+        button{
+            font-size: inherit;
+            padding: 0.5rem;
+            width: 320px;
+            margin: 1rem;
+            outline: none;
+            background: none;
+            border: none;
+            color: inherit;
+            backdrop-filter: blur(30px) ;
+            // height: 2rem;
+            box-sizing: border-box;
+            vertical-align: middle;
+            background-color: rgba(255,255,255,0.2);
+        }
+        }
+    
+    }
+
