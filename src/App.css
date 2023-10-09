@@ -23,3 +23,9 @@ html, body{
 section{
   padding: 0 10px;
 }
+@media screen and (min-width: 1024px) {
+  section{
+    padding: 0 25vw;
+
+  }
+}

@@ -4,7 +4,7 @@
   background-position-x: center;
 }
 .skills-background .skills {
-  backdrop-filter: blur(6px) brightness(70%);
+  backdrop-filter: blur(8px) brightness(70%);
   color: white;
   padding: 2rem 0;
 }
@@ -14,21 +14,53 @@
   z-index: 10;
   padding-bottom: 1rem;
 }
-.skills-background .skills > div {
-  margin-top: 30px;
+.skills-background .skills .grid {
+  gap: 2rem 0;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (min-width: 500px) {
+  .skills-background .skills .grid {
+    padding: 2rem 10vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills-background .skills .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills-background .skills .grid {
+    padding: 2rem 20vw 0 20vw;
+  }
+}
+.skills-background .skills .grid-more {
+  padding-top: 0;
 }
 .skills-background .skills button {
   font-size: inherit;
+  font-weight: 600;
   padding: 0.5rem;
-  width: 90%;
+  width: 140px;
+  border-radius: 50px;
   margin: 1rem;
   outline: none;
   background: none;
   border: none;
   color: inherit;
   backdrop-filter: blur(30px);
+  box-sizing: border-box;
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .skills-background .skills button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    height: 0px;
+  }
 }
 
 /*# sourceMappingURL=Skills.css.map */

@@ -2,17 +2,55 @@
   width: 300px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .education {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .education {
+    padding: 0 2vw;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .education {
+    width: 1130px;
+  }
+}
+.education .education-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 768px) {
+  .education .education-grid {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 100px 120px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .education .education-grid {
+    width: 100%;
+  }
+}
 
 .education-item {
-  padding-bottom: 2.5rem;
-}
-.education-item .date, .education-item .place {
-  display: flex;
-}
-.education-item .date p, .education-item .place p {
-  margin: 0;
-  padding-left: 20px;
+  padding-bottom: 2rem;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .education-item {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 .education-item h2 {
   font-weight: 400;
@@ -22,9 +60,34 @@
   font-weight: 200;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .education-item h4.spec {
+    padding-bottom: 13px;
+  }
+}
 
 .education-item:last-child {
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .school-info {
+    display: grid;
+    justify-content: center;
+  }
+}
+.school-info .date {
+  margin-top: 1.3rem;
+}
+.school-info .date,
+.school-info .place {
+  display: flex;
+}
+.school-info .date p,
+.school-info .place p {
+  margin: 0;
+  padding-left: 20px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=Education.css.map */

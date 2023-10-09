@@ -11,6 +11,14 @@
   margin: 0;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .name {
+    width: 545px;
+    display: flex;
+    gap: 1rem;
+    padding-top: 5rem;
+  }
+}
 
 .background {
   background-image: url("./1.png");
@@ -25,9 +33,8 @@
 
 .header {
   color: white;
-  backdrop-filter: blur(2px) brightness(70%);
+  backdrop-filter: blur(5px) brightness(70%);
   padding-top: 250px;
-  padding-bottom: 20px;
 }
 .header p {
   font-size: 1.5rem;
@@ -36,6 +43,17 @@
   margin: 0 auto;
   margin-top: 1.2rem;
 }
+@media screen and (min-width: 768px) {
+  .header p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header p {
+    padding-bottom: 0;
+  }
+}
 .header ul {
   text-align: center;
   list-style: none;
@@ -43,24 +61,64 @@
   margin: 0 auto;
   margin-top: 1.5rem;
   padding: 0;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 1024px) {
+  .header ul {
+    padding-top: 8rem;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+}
+.header ul #ico1:hover p {
+  color: #ffb3f7;
+  transition: color 0.3s ease;
+}
+.header ul #ico2:hover p {
+  color: #e6b6ff;
+  transition: color 0.3s ease;
+}
+.header ul #ico3:hover p {
+  color: #beb8ff;
+  transition: color 0.3s ease;
+}
+.header ul #ico4:hover p {
+  color: #a9deff;
+  transition: color 0.3s ease;
+}
+.header ul li:hover {
+  transition: color 0.3s ease;
+}
+.header ul li:hover .icons {
+  transition: 0.3s;
+  color: black;
 }
 .header ul li {
+  transition: color 0.3s ease;
   display: flex;
   padding: 0.7rem;
 }
 .header ul li a {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   display: flex;
   text-decoration: none;
   color: inherit;
   width: auto;
 }
 .header ul li p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
   margin-left: 20px;
   width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .header ul li p {
+    visibility: hidden;
+    width: 1px;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

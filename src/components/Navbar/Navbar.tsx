@@ -9,8 +9,16 @@ import "./Navbar.css";
 const Navbar: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   const [menuIconColor, setMenuIconColor] = useState("white");
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen)
+    console.log(showMenu)
+    setShowMenu(!showMenu);
+  };
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -22,34 +30,44 @@ const Navbar: React.FC = () => {
       window.removeEventListener("resize", checkScreenWidth);
     };
   }, []);
-  window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-  
-    const scrollPosition = window.scrollY;
-  
-    if (scrollPosition >= 760) {
-      navbar?.removeAttribute('style')
-      navbar?.classList.add('scrolled');
-      setMenuIconColor("black");
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
 
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 760) {
+      navbar?.removeAttribute("style");
+      navbar?.classList.add("scrolled");
+      setMenuIconColor("black");
     } else {
-      navbar?.classList.remove('scrolled');
+      navbar?.classList.remove("scrolled");
       setMenuIconColor("white");
     }
   });
+  const hideMenu = () =>{
+    setShowMenu(false);
+    setIsOpen(false);
+
+  }
+
 
   return (
     <>
-    
-      <nav className={"navbar"} style={showMenu ? {backgroundColor:"white"}: {backgroundColor:"transparent"}}>
-    
-          <div className="logo" style={showMenu ? { color: "black" } : {}}>
-            MK
-          </div>
-       
+      <nav
+        className={"navbar"}
+        style={
+          showMenu
+            ? { backgroundColor: "white" }
+            : { backgroundColor: "transparent" }
+        }
+      >
+        <div className="logo" style={showMenu ? { color: "black" } : {}}>
+          MK
+        </div>
+
         {isMobile ? (
           <>
-            {!showMenu && (
+            {/* {!showMenu && (
               <button className="navbar-btn" onClick={() => setShowMenu(true)}>
                 <IconContext.Provider value={{ color: menuIconColor, size: "24px" }}>
                   <div>
@@ -66,21 +84,31 @@ const Navbar: React.FC = () => {
                   </div>
                 </IconContext.Provider>
               </button>
-            )}
+            )} */}
+            <div id="nav-icon2"
+                    className={`menu-button ${isOpen && showMenu ? 'open' : ''}`}
+                    onClick={toggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </>
         ) : (
           <>
             <ul className="nav-links">
-              <li onClick={() => setShowMenu(false)}>
+              <li onClick={hideMenu}>
                 <a href="#experience">Experience</a>
               </li>
-              <li onClick={() => setShowMenu(false)}>
+              <li onClick={hideMenu}>
                 <a href="#education">Education</a>
               </li>
-              <li onClick={() => setShowMenu(false)}>
+              <li onClick={hideMenu}>
                 <a href="#skills">Skills</a>
               </li>
-              <li onClick={() => setShowMenu(false)}>
+              <li onClick={hideMenu}>
                 <a href="#projects">Projects</a>
               </li>
             </ul>
@@ -90,16 +118,16 @@ const Navbar: React.FC = () => {
       {showMenu && (
         <>
           <ul className="mobile-menu">
-            <li onClick={() => setShowMenu(false)}>
+            <li onClick={hideMenu}>
               <a href="#experience">Experience</a>
             </li>
-            <li onClick={() => setShowMenu(false)}>
+            <li onClick={hideMenu}>
               <a href="#education">Education</a>
             </li>
-            <li onClick={() => setShowMenu(false)}>
+            <li onClick={hideMenu}>
               <a href="#skills">Skills</a>
             </li>
-            <li onClick={() => setShowMenu(false)}>
+            <li onClick={hideMenu}>
               <a href="#projects">Projects</a>
             </li>
           </ul>
