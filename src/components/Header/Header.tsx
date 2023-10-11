@@ -45,7 +45,7 @@ const Header: React.FC = () => {
     }
   }, []);
   return (
-    <div className="background">
+    <div className="background"  id="start">
       <section className="header">
         <div className="name">
           <h1 className="my-name">Monika </h1>
@@ -53,21 +53,21 @@ const Header: React.FC = () => {
         </div>
         <p>Computer Science Student</p>
         <ul>
-          <li id="ico1">
+          <li id="ico1" >
             <a href="https://github.com/mkarawan">
               <IconContext.Provider value={{ color: iconColor1, size: "30px"  }}>
                 <div>
-                  <SiGithub  className="icons"/>
+                  <SiGithub  className="icons" title="https://github.com/mkarawan"/>
                 </div>
               </IconContext.Provider>
               <p>Github</p>
             </a>
           </li>
-          <li id="ico2">
-            <a href="https://github.com/mkarawan">
+          <li id="ico2" >
+            <a href="https://www.linkedin.com/in/mkarawan/">
               <IconContext.Provider value={{ color: iconColor2, size: "30px" }}>
                 <div>
-                  <SiLinkedin className="icons"/>
+                  <SiLinkedin className="icons" title="https://www.linkedin.com/in/mkarawan/"/>
                 </div>
               </IconContext.Provider>
               <p>LinkedIn</p>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
           <li id="ico3">
             <IconContext.Provider value={{ color: iconColor3, size: "30px" }}>
               <div>
-                <FaFileDownload className="icons"/>
+                <FaFileDownload className="icons" title="Download resume"/>
               </div>
             </IconContext.Provider>
             <p>Resume</p>
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           <li id="ico4">
             <IconContext.Provider value={{ color: iconColor4, size: "30px" }}>
               <div>
-                <SiMinutemailer className="icons"/>
+                <SiMinutemailer className="icons" title="Email me"/>
               </div>
             </IconContext.Provider>
             <p>Email me</p>

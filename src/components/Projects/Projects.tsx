@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "./Projects.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const Projects: React.FC = () => {
   return (
@@ -32,6 +33,8 @@ const Projects: React.FC = () => {
           </p>
         </div>
       </Carousel>
+      <button className="up-btn"><a href="#start">UP</a></button>
+
     </section>
   );
 };

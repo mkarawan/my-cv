@@ -8,6 +8,9 @@ footer{
         font-size: initial;
         margin: 0.3rem;
         font-weight: 500;
+        &:first-of-type{
+            cursor: pointer;
+        }
     }
     div{
         padding: 0.7rem;

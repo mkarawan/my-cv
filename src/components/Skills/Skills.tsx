@@ -87,7 +87,7 @@ const Skills: React.FC = () => {
           )}
         </div>
         {!showMore && (
-          <button type="button" onClick={handleShowMore}>
+          <button type="button" onClick={handleShowMore} className="button">
             More
           </button>
         )}
@@ -120,7 +120,7 @@ const Skills: React.FC = () => {
               </IconContext.Provider>
             </div>
 
-            <button type="button" onClick={handleShowMore}>
+            <button className="button" type="button" onClick={handleShowMore}>
               Less
             </button>
           </>

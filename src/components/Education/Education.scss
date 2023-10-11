@@ -4,7 +4,6 @@
   @media screen and (min-width: 768px) {
     box-sizing: border-box;
     width: 100%;
-
   }
   @media screen and (min-width: 1024px) {
     padding: 0 2vw;
@@ -12,14 +11,13 @@
   }
   @media screen and (min-width: 1440px) {
     width: 1130px;
-
   }
 
   .education-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     @media screen and (min-width: 768px) {
-        grid-auto-flow: column;
+      grid-auto-flow: column;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-template-rows: 100px 120px;
@@ -29,18 +27,13 @@
     }
 
     @media screen and (min-width: 1440px) {
-        width: 100%;
-    
-      }
-
+      width: 100%;
+    }
   }
 }
 .education-item {
-  padding-bottom: 2rem;
   text-align: left;
 
-
- 
   @media screen and (min-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -48,13 +41,15 @@
     text-align: center;
   }
 
-
   h2 {
     font-weight: 400;
     margin: 1rem 0 0.5rem 0;
-    &.python-dev{
-
+    &.python-dev {
+      padding-top: 2rem;
+      @media screen and (min-width: 768px) {
+        padding-top: 0rem;
       }
+    }
   }
   h4 {
     font-weight: 200;
@@ -69,23 +64,23 @@
 .education-item:last-child {
   padding-bottom: 0;
 }
- .school-info {
-    @media screen and (min-width: 768px) {
-      display: grid;
-      justify-content: center;
-    }
-    .date {
-        margin-top: 1.3rem;
-      }
-    
-      .date,
-      .place {
-        display: flex;
-    
-        p {
-          margin: 0;
-          padding-left: 20px;
-          text-align: left;
-        }
-      }
+.school-info {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    justify-content: center;
   }
+  .date {
+    margin-top: 1.3rem;
+  }
+
+  .date,
+  .place {
+    display: flex;
+
+    p {
+      margin: 0;
+      padding-left: 20px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.up-btn {
+  --c1: #a37ea6;
+  --c2: #322A7C;
+  transition: 0.5s;
+  background: linear-gradient(135deg, var(--c1, #322A7C), var(--c2, #a37ea6) 51%, var(--c1, #322A7C)) var(--x, 0)/200%;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 100px;
+  border-radius: 50px;
+  margin: 1rem;
+  outline: none;
+  border: none;
+  color: inherit;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.up-btn a {
+  text-decoration: none;
+  color: white;
+}
+.up-btn:hover {
+  --x: 100%;
+  box-shadow: inset 1px 1px 3px 0px #130e39;
+}
+
+/*# sourceMappingURL=Projects.css.map */

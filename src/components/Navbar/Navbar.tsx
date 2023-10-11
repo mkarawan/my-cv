@@ -15,8 +15,8 @@ const Navbar: React.FC = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen)
-    console.log(showMenu)
+    console.log(isOpen);
+    console.log(showMenu);
     setShowMenu(!showMenu);
   };
 
@@ -35,7 +35,11 @@ const Navbar: React.FC = () => {
 
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= 760) {
+    if (window.innerWidth <= 1024 && scrollPosition >= 760) {
+      navbar?.removeAttribute("style");
+      navbar?.classList.add("scrolled");
+      setMenuIconColor("black");
+    } else if (window.innerWidth > 1024 && scrollPosition >= 620) {
       navbar?.removeAttribute("style");
       navbar?.classList.add("scrolled");
       setMenuIconColor("black");
@@ -44,12 +48,10 @@ const Navbar: React.FC = () => {
       setMenuIconColor("white");
     }
   });
-  const hideMenu = () =>{
+  const hideMenu = () => {
     setShowMenu(false);
     setIsOpen(false);
-
-  }
-
+  };
 
   return (
     <>
@@ -67,27 +69,11 @@ const Navbar: React.FC = () => {
 
         {isMobile ? (
           <>
-            {/* {!showMenu && (
-              <button className="navbar-btn" onClick={() => setShowMenu(true)}>
-                <IconContext.Provider value={{ color: menuIconColor, size: "24px" }}>
-                  <div>
-                    <HiOutlineMenuAlt3 />
-                  </div>
-                </IconContext.Provider>
-              </button>
-            )}
-            {showMenu && (
-              <button className="navbar-btn" onClick={() => setShowMenu(false)}>
-                <IconContext.Provider value={{ color: "black", size: "24px" }}>
-                  <div>
-                    <HiXMark />
-                  </div>
-                </IconContext.Provider>
-              </button>
-            )} */}
-            <div id="nav-icon2"
-                    className={`menu-button ${isOpen && showMenu ? 'open' : ''}`}
-                    onClick={toggleMenu}>
+            <div
+              id="nav-icon2"
+              className={`menu-button ${isOpen && showMenu ? "open" : ""}`}
+              onClick={toggleMenu}
+            >
               <span></span>
               <span></span>
               <span></span>
