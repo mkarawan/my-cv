@@ -1,8 +1,7 @@
 footer {
   color: white;
   background-image: url("./footer.png");
-  background-size: cover;
-  background-position-x: center;
+  background-size: auto;
 }
 footer p {
   font-family: "Montserrat", sans-serif;
@@ -11,7 +10,7 @@ footer p {
   font-weight: 500;
 }
 footer div {
-  padding: 0.7rem;
+  padding: 1.7rem;
   backdrop-filter: blur(4px) brightness(70%);
 }
 

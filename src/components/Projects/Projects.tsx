@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
           </p>
         </div>
       </Carousel>
-      <button className="up-btn"><a href="#start">UP</a></button>
+      <a href="#start"><button className="up-btn">UP</button></a>
 
     </section>
   );

@@ -10,7 +10,7 @@
   top: 0;
   transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  padding: 0.7rem 1.5rem;
+  padding: 1.3rem 2rem;
 }
 .navbar.mobile {
   top: 0;
@@ -181,5 +181,14 @@
   left: calc(50% - 0px);
   top: 15px;
 }
+
+@media screen and (max-width: 480px) {
+  .navbar{
+    padding: 15px;
+  }
+
+}
+
+
 
 /*# sourceMappingURL=Navbar.css.map */

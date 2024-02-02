@@ -8,28 +8,51 @@ h1,h2,h3,h4 {
   font-family: "Montserrat", sans-serif;
 }
 h1{
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
 p, li {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
 }
 h1.section-name{
+  margin: 0;
   color:#201b7c;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  margin-bottom: 20px;
 }
 html, body{
   font-size: 20px;
 
 }
 section{
-  padding: 0 10px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   section{
     padding: 0 25vw;
 
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  html, body{
+    font-size: 18px;
+  
+  }
+  h1.section-name{
+    padding-top: 0;
+ 
+  }
+
+}
+@media screen and (max-width: 480px) {
+  html, body{
+    font-size: 16px;
+  
   }
 
 }

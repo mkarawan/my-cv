@@ -1,3 +1,31 @@
 section.hello p{
     line-height: 2rem;
+    text-align: left;
+
 }
+@media screen and (max-width: 480px) {
+
+    .hello p{
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+  .hello{
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+
+    .hello{
+      padding-top: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    section.hello{
+      padding: 0 15vw;
+  
+    }
+  
+  }

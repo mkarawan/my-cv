@@ -9,6 +9,10 @@ import { BsGit } from "react-icons/bs";
 import { SiPython } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { SiSass } from "react-icons/si";
+import { MdDevicesOther } from "react-icons/md";
+
+import { LuMonitorSmartphone } from "react-icons/lu";
+
 
 const Skills: React.FC = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
@@ -33,25 +37,25 @@ const Skills: React.FC = () => {
       <section className="skills" id="skills">
         <h1 className="section-name">Skills</h1>
         <div className="grid">
-          <IconContext.Provider value={{ color: "white", size: "70px" }}>
+          <IconContext.Provider value={{ color: "white", size: "60px" }}>
             <div>
               <SiHtml5 />
               <p>HTML5</p>
             </div>
           </IconContext.Provider>
-          <IconContext.Provider value={{ color: "white", size: "70px" }}>
+          <IconContext.Provider value={{ color: "white", size: "60px" }}>
             <div>
               <SiCss3 />
               <p>CSS3</p>
             </div>
           </IconContext.Provider>{" "}
-          <IconContext.Provider value={{ color: "white", size: "70px" }}>
+          <IconContext.Provider value={{ color: "white", size: "60px" }}>
             <div>
               <SiReact />
               <p>React</p>
             </div>
           </IconContext.Provider>
-          <IconContext.Provider value={{ color: "white", size: "70px" }}>
+          <IconContext.Provider value={{ color: "white", size: "60px" }}>
             <div>
               <SiTypescript />
               <p>Typescript</p>
@@ -59,28 +63,35 @@ const Skills: React.FC = () => {
           </IconContext.Provider>
           {layout && (
             <>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <BsGit />
                   <p>Git</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiPython />
                   <p>Python</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiDjango />
                   <p>Django</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiSass />
                   <p>Sass</p>
+                </div>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
+                <div>
+                <MdDevicesOther />
+
+                  <p>RWD</p>
                 </div>
               </IconContext.Provider>
             </>
@@ -94,28 +105,35 @@ const Skills: React.FC = () => {
         {showMore && (
           <>
             <div className="grid grid-more">
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <BsGit />
                   <p>Git</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiPython />
                   <p>Python</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiDjango />
                   <p>Django</p>
                 </div>
               </IconContext.Provider>
-              <IconContext.Provider value={{ color: "white", size: "70px" }}>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
                 <div>
                   <SiSass />
                   <p>Sass</p>
+                </div>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ color: "white", size: "60px" }}>
+                <div>
+                <MdDevicesOther />
+
+                  <p>RWD</p>
                 </div>
               </IconContext.Provider>
             </div>

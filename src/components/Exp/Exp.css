@@ -1,14 +1,18 @@
 .experience {
-  margin-bottom: 3rem;
+  background-color: #f7f7f7;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .experience {
-    padding: 0 4rem;
+    padding: 0rem 4rem;
+    padding-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .experience {
-    padding: 0 25vw;
+    padding: 0rem 25vw;
+    padding-bottom: 3rem;
   }
 }
 
@@ -33,6 +37,7 @@
   text-align: left;
   padding-left: 30px;
   box-sizing: border-box;
+  font-size: 1.15rem;
 }
 
 .exp-date {
@@ -64,10 +69,10 @@
   position: relative;
 }
 .exp-item .exp-description {
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin-top: 0;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 2rem;
   box-sizing: border-box;
 }
 

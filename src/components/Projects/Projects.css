@@ -14,14 +14,29 @@
   color: inherit;
   box-sizing: border-box;
   vertical-align: middle;
-}
-.up-btn a {
-  text-decoration: none;
-  color: white;
+  margin-bottom: 2rem;
 }
 .up-btn:hover {
   --x: 100%;
   box-shadow: inset 1px 1px 3px 0px #130e39;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects {
+  background-color: #f7f7f7;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    padding-top: 0;
+  }
+}
+.projects .section-name {
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=Projects.css.map */

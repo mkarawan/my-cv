@@ -4,10 +4,12 @@
   background-position-x: center;
 
   .skills {
-    backdrop-filter: blur(8px) brightness(65%);
+    backdrop-filter: blur(140px) brightness(73%);
     color: white;
     padding: 2rem 0;
-
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
     h1 {
       color: white;
       margin: 0;

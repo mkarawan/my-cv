@@ -7,7 +7,11 @@
   backdrop-filter: blur(140px) brightness(73%);
   color: white;
   padding: 2rem 0;
-  
+}
+@media screen and (min-width: 768px) {
+  .skills-background .skills {
+    padding: 0;
+  }
 }
 .skills-background .skills h1 {
   color: white;
@@ -57,9 +61,6 @@ button.button {
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media screen and (min-width: 768px) {
-  .skills-background .skills{
-      padding: 0;
-  }
   button.button {
     visibility: hidden;
     margin: 0;
@@ -68,4 +69,4 @@ button.button {
   }
 }
 
-/*# sourceMappingURL=Skills.css.map */
+/*# sourceMappingURL=Skilss.css.map */
