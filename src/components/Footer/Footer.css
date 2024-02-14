@@ -3,15 +3,31 @@ footer {
   background-image: url("./footer.png");
   background-size: auto;
 }
-footer p {
-  font-family: "Montserrat", sans-serif;
-  font-size: initial;
-  margin: 0.3rem;
-  font-weight: 500;
-}
 footer div {
   padding: 1.7rem;
   backdrop-filter: blur(4px) brightness(70%);
+}
+footer div p {
+  font-family: "Opensans", sans-serif;
+  font-size: initial;
+  margin: 0.4rem;
+  font-weight: 500;
+}
+footer div p:nth-of-type(-n+2) {
+  font-weight: 700;
+}
+footer div p:nth-last-child(-n+2) {
+  text-decoration: underline;
+}
+footer div p:nth-last-child(-n+2) a:hover {
+  color: #a9deff;
+  transition: color 0.3s ease;
+}
+footer div p:nth-last-child(-n+2) a:visited {
+  color: inherit;
+}
+footer div p:nth-last-child(-n+2):hover {
+  color: #a9deff;
 }
 
 /*# sourceMappingURL=Footer.css.map */

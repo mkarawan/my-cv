@@ -8,28 +8,28 @@ const Projects: React.FC = () => {
     <section className="projects" id="projects">
       <h1 className="section-name">Projects </h1>
       <Carousel showArrows={true} infiniteLoop={true} swipeable={true} emulateTouch={true}>
-        <div>
-          <img src="website.png" />
+        <div >
+          <img src="fintegro.png" />
           <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            lorem eu mollis elementum, arcu lacus pretium ipsum, vel auctor
-            tellus sapien eu ex. Proin pharet
+          PWA app made during Fintegrow intership to make monitoring conversation durations easier. <a href="https://minicrm.toadres.pl/"><button className="up-btn visit-btn">Visit</button></a>
+          </p>
+          </div>
+        <div>
+          <img src="ccv.png" />
+          <p className="project-description">
+            First resume based on HTML, CSS and a little bit of JavaScript. <a href="https://mkarawan.netlify.app/"><button className="up-btn visit-btn">Visit</button></a>
           </p>
         </div>
         <div>
-          <img src="website2.jpg" />
+          <img src="blog.png" />
           <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            lorem eu mollis elementum, arcu lacus pretium ipsum, vel auctor
-            tellus sapien eu ex. Proin pharet
+            Blog created with Django 4.2.1
           </p>
         </div>
         <div>
-          <img src="website3.jpeg" />
+          <img src="swapi.png" />
           <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            lorem eu mollis elementum, arcu lacus pretium ipsum, vel auctor
-            tellus sapien eu ex. Proin pharet
+          A website designed for searching information about Star Wars, created using Django and SWAPI. <a href="https://star-wars-swapi.herokuapp.com/"><button className="up-btn visit-btn">Visit</button></a>
           </p>
         </div>
       </Carousel>

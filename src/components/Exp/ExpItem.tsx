@@ -7,6 +7,7 @@ import { HiChevronUp } from "react-icons/hi";
 interface ExpItemProps {
   date: string;
   jobName: string;
+  company: string;
   description: string;
   show: boolean;
 }
@@ -14,6 +15,7 @@ interface ExpItemProps {
 const ExpItem: React.FC<ExpItemProps> = ({
   date,
   jobName,
+  company,
   description,
   show,
 }) => {
@@ -32,6 +34,7 @@ const ExpItem: React.FC<ExpItemProps> = ({
         </div>
         <div className="more" onClick={handleShowMore}>
           <h3>{jobName}</h3>
+          
           {!showMore ? (
             <button type="button">
               <IconContext.Provider value={{ color: "black", size: "26px" }}>
@@ -50,7 +53,7 @@ const ExpItem: React.FC<ExpItemProps> = ({
             </button>
           )}
         </div>
-        {showMore && <p className="exp-description">{description}</p>}
+        {showMore && <div><h4 className="company-name">{company}</h4> <p className="exp-description">{description}</p></div>}
       </div>
     </>
   );

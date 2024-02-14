@@ -1,5 +1,5 @@
 .up-btn{
-    
+    cursor: pointer;
     --c1: #a37ea6;
     --c2: #322A7C;
     transition: 0.5s;
@@ -38,4 +38,18 @@ a{
         padding-bottom: 2rem;
 
     }
+}
+.visit-btn{
+    padding: 0.2rem;
+    border-radius: 7px;
+    margin: 0.2rem;
+    font-size: smaller;
+    width: 70px;
+}
+.carousel{
+    .thumb{
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+
 }

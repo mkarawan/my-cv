@@ -9,6 +9,7 @@ const Experience: React.FC = () => {
       <div className="exp-timeline">
         <ExpItem
           jobName="Front-end Developer Intership"
+          company="Fintegrow sp. z o.o."
           date="2023"
           description="During my internship, I dived into JavaScript,
            TypeScript, and React, starting from the basics. My main goal
@@ -24,6 +25,7 @@ const Experience: React.FC = () => {
         <ExpItem
           jobName="Customer Advisor"
           date="2022"
+          company="Family Optic"
           description="I maintained the optician's appearance 
         and offered expert guidance for frame, glasses, and contact lens selection."
           show={false}
@@ -31,6 +33,7 @@ const Experience: React.FC = () => {
         <ExpItem
           jobName="Customer Advisor"
           date="2021"
+          company="Leroy Merlin SA"
           description="I provided professional assistance in assortment selection and 
         strived to increase revenue in my section of the store."
           show={false}

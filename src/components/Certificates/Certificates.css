@@ -1,4 +1,9 @@
 .certificates{
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .certificates{
+        padding-bottom: 3rem;
+    }
 }

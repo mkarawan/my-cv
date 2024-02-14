@@ -2,20 +2,41 @@ footer{
     color: white;
     background-image: url("./footer.png");
     background-size: auto; 
-    p{
-        font-family: "Montserrat", sans-serif;
-        font-size: initial;
-        margin: 0.3rem;
-        font-weight: 500;
-        &:first-of-type{
-            cursor: pointer;
-        }
-    }
+
+
     div{
         padding: 1.7rem;
-
         backdrop-filter: blur(4px) brightness(70%);
+        p{
+            font-family: "Opensans", sans-serif;
+            font-size: initial;
+            margin: 0.4rem;
+            font-weight: 500;
+
+            &:nth-of-type(-n+2){
+                font-weight: 700;
+            }
+            &:nth-last-child(-n+2){
+                a{
+                    &:hover{
+                        color: #a9deff;
+                        transition: color 0.3s ease;
+                    }
+                    &:visited{
+                        color: inherit;
+                    }
+                }
+                &:hover{
+                    color: #a9deff;
+                }
+          
+                text-decoration: underline;
+              
+            
+            }
+        }
 
     }
+
 
 }
