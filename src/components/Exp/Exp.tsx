@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ExpItem from "./ExpItem";
 import "./Exp.css";
 

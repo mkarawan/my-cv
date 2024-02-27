@@ -1,9 +1,6 @@
 // Navbar.tsx
 
 import React, { useState, useEffect } from "react";
-import { IconContext } from "react-icons";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { HiXMark } from "react-icons/hi2";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {

@@ -11,7 +11,6 @@ import { SiDjango } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { MdDevicesOther } from "react-icons/md";
 
-import { LuMonitorSmartphone } from "react-icons/lu";
 
 
 const Skills: React.FC = () => {
