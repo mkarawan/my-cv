@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const [menuIconColor, setMenuIconColor] = useState("white");
+  const [, setMenuIconColor] = useState("white");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
