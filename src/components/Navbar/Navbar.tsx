@@ -101,16 +101,16 @@ const Navbar: React.FC = () => {
       {showMenu && (
         <>
           <ul className="mobile-menu">
-            <li onClick={hideMenu}>
+            <li onClick={hideMenu} data-aos="fade-left"data-aos-druation="700">
               <a href="#experience">Experience</a>
             </li>
-            <li onClick={hideMenu}>
+            <li onClick={hideMenu} data-aos="fade-left" data-aos-delay="100" data-aos-druation="700">
               <a href="#education">Education</a>
             </li>
-            <li onClick={hideMenu}>
+            <li onClick={hideMenu} data-aos="fade-left" data-aos-delay="200"data-aos-druation="700">
               <a href="#skills">Skills</a>
             </li>
-            <li onClick={hideMenu}>
+            <li onClick={hideMenu} data-aos="fade-left" data-aos-delay="300"data-aos-druation="700">
               <a href="#projects">Projects</a>
             </li>
           </ul>
