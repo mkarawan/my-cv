@@ -6,7 +6,7 @@ import { MdOutlineSchool } from "react-icons/md";
 
 const Education: React.FC = () => {
   return (
-    <section className="education" id="education">
+    <section className="education" id="education" data-aos="fade-in">
       <h1 className="section-name">Education</h1>
       <div className="education-grid">
       <div className="education-item">

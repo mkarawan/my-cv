@@ -35,28 +35,28 @@ const Skills: React.FC = () => {
   return (
     <div className="skills-background">
       <section className="skills" id="skills">
-        <h1 className="section-name">Skills</h1>
+        <h1 className="section-name" data-aos="fade-up" data-aos-duration="1000">Skills</h1>
         <div className="grid">
           <IconContext.Provider value={{ color: "white", size: "60px" }}>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="600">
               <SiHtml5 />
               <p>HTML5</p>
             </div>
           </IconContext.Provider>
           <IconContext.Provider value={{ color: "white", size: "60px" }}>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="100" >
               <SiCss3 />
               <p>CSS3</p>
             </div>
           </IconContext.Provider>{" "}
           <IconContext.Provider value={{ color: "white", size: "60px" }}>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
               <SiReact />
               <p>React</p>
             </div>
           </IconContext.Provider>
           <IconContext.Provider value={{ color: "white", size: "60px" }}>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="600" >
               <SiTypescript />
               <p>Typescript</p>
             </div>
@@ -64,31 +64,31 @@ const Skills: React.FC = () => {
           {layout && (
             <>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
                   <BsGit />
                   <p>Git</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                   <SiPython />
                   <p>Python</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600"  >
                   <SiDjango />
                   <p>Django</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
                   <SiSass />
                   <p>Sass</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                 <MdDevicesOther />
 
                   <p>RWD</p>
@@ -106,31 +106,31 @@ const Skills: React.FC = () => {
           <>
             <div className="grid grid-more">
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600">
                   <BsGit />
                   <p>Git</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600">
                   <SiPython />
                   <p>Python</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600">
                   <SiDjango />
                   <p>Django</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600">
                   <SiSass />
                   <p>Sass</p>
                 </div>
               </IconContext.Provider>
               <IconContext.Provider value={{ color: "white", size: "60px" }}>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="600">
                 <MdDevicesOther />
 
                   <p>RWD</p>

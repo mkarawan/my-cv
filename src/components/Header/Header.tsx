@@ -46,14 +46,14 @@ const Header: React.FC = () => {
   }, []);
   return (
     <div className="background"  id="start">
-      <section className="header">
-        <div className="name">
+      <section className="header" >
+        <div className="name" data-aos="zoom-in">
           <h1 className="my-name">Monika </h1>
           <h1 className="my-name">Karawan</h1>
         </div>
-        <p>Computer Science Student</p>
+        <p data-aos="fade-up" data-aos-delay='400'>Computer Science Student</p>
         <ul>
-          <li id="ico1" >
+          <li id="ico1" className="icon" data-aos="fade-down" data-aos-delay='400'>
             <a href="https://github.com/mkarawan">
               <IconContext.Provider value={{ color: iconColor1, size: "30px"  }}>
                 <div>
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
               <p>Github</p>
             </a>
           </li>
-          <li id="ico2" >
+          <li className="icon" id="ico2" data-aos="fade-down" data-aos-delay='450'>
             <a href="https://www.linkedin.com/in/mkarawan/">
               <IconContext.Provider value={{ color: iconColor2, size: "30px" }}>
                 <div>
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
               <p>LinkedIn</p>
             </a>
           </li>
-          <li id="ico3">
+          <li className="icon" id="ico3"data-aos="fade-down" data-aos-delay='500'>
             <IconContext.Provider value={{ color: iconColor3, size: "30px" }}>
               <div>
                 <FaFileDownload className="icons" title="Download resume"/>
@@ -81,13 +81,13 @@ const Header: React.FC = () => {
             </IconContext.Provider>
             <p>Resume</p>
           </li>
-          <li id="ico4">
+          <li className="icon" id="ico4"data-aos="fade-down" data-aos-delay='550'>
             <IconContext.Provider value={{ color: iconColor4, size: "30px" }}>
               <div>
                 <SiMinutemailer className="icons" title="Email me"/>
               </div>
             </IconContext.Provider>
-            <p>Email me</p>
+            <p>Email</p>
           </li>
         </ul>
       </section>
@@ -97,4 +97,4 @@ const Header: React.FC = () => {
 
 export default Header;
 
-// rsc
+

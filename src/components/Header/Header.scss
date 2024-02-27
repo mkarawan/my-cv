@@ -8,8 +8,8 @@
     text-align: left;
   }
   h1 {
-    &.my-name{
-      @media screen and (min-width:1440px){
+    &.my-name {
+      @media screen and (min-width: 1440px) {
         font-size: 4rem;
       }
     }
@@ -43,11 +43,12 @@
   padding-top: 250px;
   p {
     font-size: 1.5rem;
+
     width: 300px;
     text-align: left;
     margin: 0 auto;
     margin-top: 1.2rem;
-    @media screen and (min-width:1440px){
+    @media screen and (min-width: 1440px) {
       font-size: 2rem;
     }
     @media screen and (min-width: 768px) {
@@ -71,66 +72,98 @@
       display: flex;
       margin-bottom: 0;
       padding-bottom: 0;
-      gap: 0.5rem;
+      gap: 0.3rem;
       justify-content: center;
     }
+    .icon {
+    }
 
-    #ico1:hover{ 
-      p{
-        color:#FFB3F7;
+    #ico1:hover {
+      p {
+        color: #ffb3f7;
         transition: color 0.3s ease;
       }
     }
-    #ico2:hover{ 
-      p{
-        color:#E6B6FF;
+    #ico2:hover {
+      p {
+        color: #e6b6ff;
         transition: color 0.3s ease;
       }
     }
-    #ico3:hover{ 
-      p{
-        color:#BEB8FF;
-        transition: color 0.3s ease
+    #ico3:hover {
+      p {
+        color: #beb8ff;
+        transition: color 0.3s ease;
       }
     }
-    #ico4:hover{ 
-      p{
-        color:#A9DEFF;
-        transition: color 0.3s ease
+    #ico4:hover {
+      p {
+        color: #a9deff;
+        transition: color 0.3s ease;
       }
     }
-    li:hover{
-              transition: color 0.3s ease;
-.icons{
-  transition: 0.3s;
-  color: black;
-}
-
-}
+    li:hover {
+      transition: color 0.3s ease;
+      .icons {
+        transition: 0.3s;
+        color: black;
+      }
+    }
     li {
       cursor: pointer;
-              transition: color 0.3s ease;
-
+      transition: color 0.3s ease;
+      align-items: center;
       display: flex;
       padding: 0.7rem;
-      
+
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+        align-items:center ;
+      div{
+        transition: transform 330ms ease-in-out;
+      }
+          &:hover {
+            div{
+              transition: transform 330ms ease-in-out;
+            transform: translateY(-10px);
+          }
+          p{
+            visibility: visible;
+            opacity: 1;    
+            transition: visibility 0.3s linear, opacity 300ms;
+    }
+
+        
+        }
+      }
+
       a {
         font-size: 1.3rem;
         display: flex;
         text-decoration: none;
         color: inherit;
         width: auto;
+        @media screen and (min-width: 1024px) {
+          display: block;
+        }
       }
       p {
         font-size: 1.3rem;
         margin: 0;
         margin-left: 20px;
         width: auto;
+        
         @media screen and (min-width: 1024px) {
           visibility: hidden;
-          width: 1px;
+          font-size: 0.8rem;
+          margin: 0;
+          font-weight: 500;
+          opacity: 0;
+          transition:visibility 0.3s linear,opacity 0.3s linear;          }
+
         }
       }
     }
   }
-}
+

@@ -5,9 +5,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects: React.FC = () => {
   return (
-    <section className="projects" id="projects">
+    <section className="projects" id="projects" data-aos="fade-up">
       <h1 className="section-name">Projects </h1>
-      <Carousel showArrows={true} infiniteLoop={true} swipeable={true} emulateTouch={true}>
+      <Carousel showArrows={true} infiniteLoop={true} swipeable={true} emulateTouch={true} autoPlay={true}>
         <div >
           <img src="fintegro.png" />
           <p className="project-description">

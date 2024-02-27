@@ -84,24 +84,24 @@
     display: flex;
     margin-bottom: 0;
     padding-bottom: 0;
-    gap: 0.5rem;
+    gap: 0.3rem;
     justify-content: center;
   }
 }
 .header ul #ico1:hover p {
-  color: #FFB3F7;
+  color: #ffb3f7;
   transition: color 0.3s ease;
 }
 .header ul #ico2:hover p {
-  color: #E6B6FF;
+  color: #e6b6ff;
   transition: color 0.3s ease;
 }
 .header ul #ico3:hover p {
-  color: #BEB8FF;
+  color: #beb8ff;
   transition: color 0.3s ease;
 }
 .header ul #ico4:hover p {
-  color: #A9DEFF;
+  color: #a9deff;
   transition: color 0.3s ease;
 }
 .header ul li:hover {
@@ -114,8 +114,27 @@
 .header ul li {
   cursor: pointer;
   transition: color 0.3s ease;
+  align-items: center;
   display: flex;
   padding: 0.7rem;
+}
+@media screen and (min-width: 1024px) {
+  .header ul li {
+    display: block;
+    align-items: center;
+  }
+  .header ul li div {
+    transition: transform 330ms ease-in-out;
+  }
+  .header ul li:hover div {
+    transition: transform 330ms ease-in-out;
+    transform: translateY(-10px);
+  }
+  .header ul li:hover p {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s linear, opacity 300ms;
+  }
 }
 .header ul li a {
   font-size: 1.3rem;
@@ -123,6 +142,11 @@
   text-decoration: none;
   color: inherit;
   width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .header ul li a {
+    display: block;
+  }
 }
 .header ul li p {
   font-size: 1.3rem;
@@ -133,7 +157,11 @@
 @media screen and (min-width: 1024px) {
   .header ul li p {
     visibility: hidden;
-    width: 1px;
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 500;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
   }
 }
 

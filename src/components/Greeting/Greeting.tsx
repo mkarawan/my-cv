@@ -2,7 +2,7 @@ import React from "react";
 import "./Greeting.css";
 const Greeting: React.FC = () => {
   return (
-    <section className="hello">
+    <section className="hello" data-aos="fade-up" data-aos-delay="600">
       <h1 className="section-name">Hello</h1>
       <p>
       I'm currently in my third year of studies, pursuing a degree in Computer Engineering. 
